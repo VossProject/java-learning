@@ -28,5 +28,16 @@ public class VariablesDemo {
         char grade = 'A';
         String name = "Mikey";
         System.out.println(name + " got a grade of " + grade);
+
+        // --- Type casting ---
+        // Widening (safe): smaller type -> larger type, no data loss
+        int score = 95;
+        double scoreAsDouble = score;
+        System.out.println("Int to double: " + score + " -> " + scoreAsDouble);
+
+        // Narrowing (risky): larger type -> smaller type, may lose data
+        double price = 9.99;
+        int priceAsInt = (int) price;
+        System.out.println("Double to int: " + price + " -> " + priceAsInt);
     }
 }
