@@ -1,6 +1,6 @@
 # Java Learning Journey
 
-My structured path through Java — from fundamentals to advanced topics.
+My structured path through Java, from fundamentals to advanced topics.
 
 ## Progress
 
