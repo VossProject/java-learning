@@ -49,5 +49,32 @@ public class ArraysDemo {
         System.out.println("Average Temperature: " + avg);
         System.out.println("Highest Temperature: " + highest);
         System.out.println("Lowest Temperature: " + lowest);
+
+        // Multi-dimensional arrays
+        // create multi-dimensional array of int called grades (3 students - 4 test scores ea)
+        int[][] grades = {
+                {85, 90, 78, 92},
+                {70, 65, 88, 72},
+                {95, 100, 92, 98}
+        };
+        // nested loops to print table of scores for each student
+        for (int row = 0; row < grades.length; row++) {
+            System.out.print("Student " + (row + 1) + ": ");
+            for (int col = 0; col < grades[row].length; col++) {
+                System.out.print( grades[row][col]+ " ");
+            }
+            System.out.println();
+        }
+        // calculate average for each student and print
+        for (int row = 0; row < grades.length; row++) {
+            System.out.print("Student " + (row + 1) + " Average: ");
+            double scoreAverage = 0;
+            for (int col = 0; col < grades[row].length; col++) {
+                scoreAverage = scoreAverage + grades[row][col];
+            }
+            scoreAverage = scoreAverage / grades[row].length;
+            System.out.print(scoreAverage);
+            System.out.println();
+        }
     }
 }
