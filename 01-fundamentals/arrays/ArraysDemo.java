@@ -22,5 +22,32 @@ public class ArraysDemo {
         for (int i = 1; i <= scores.length; i++) {
             System.out.println("Score " + i + ": " + scores[i-1]);
         }
+
+        // Array Stats
+        // Create array of double called temperatures - 7 values
+        double[] temperatures = {4, 16, 98, 4, 26, 98};
+        // For each loop to sum all temps
+        double sum = 0;
+        for (double value : temperatures) {
+            sum = sum + value;
+        }
+        // For loop to find highest and lowest temps
+        double highest = temperatures[0];
+        double lowest = temperatures[0];
+        for (int i = 0; i < temperatures.length; i++) {
+            // check if value is larger than highest, then assign value to highest var
+            if (temperatures[i] > highest) {
+                highest = temperatures[i];
+            }
+            // check if value is larger than highest, then assign value to highest var
+            if (temperatures[i] < lowest) {
+                lowest = temperatures[i];
+            }
+        }
+        // Print average, highest, lowest
+        double avg = sum / temperatures.length;
+        System.out.println("Average Temperature: " + avg);
+        System.out.println("Highest Temperature: " + highest);
+        System.out.println("Lowest Temperature: " + lowest);
     }
 }
