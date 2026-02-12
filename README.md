@@ -6,8 +6,8 @@ My structured path through Java, from fundamentals to advanced topics.
 
 | Phase | Topic | Status |
 |-------|-------|--------|
-| 01 | Fundamentals | In Progress |
-| 02 | Object-Oriented Programming | Not Started |
+| 01 | Fundamentals | ✅ Complete |
+| 02 | Object-Oriented Programming | In Progress |
 | 03 | Data Structures | Not Started |
 | 04 | Algorithms | Not Started |
 | 05 | Advanced Java | Not Started |
