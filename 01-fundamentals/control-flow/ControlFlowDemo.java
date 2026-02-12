@@ -10,6 +10,8 @@
  */
 public class ControlFlowDemo {
     public static void main(String[] args) {
+
+        // Grade calculator
         // score var
         int score = 90;
 
@@ -30,6 +32,7 @@ public class ControlFlowDemo {
             System.out.println("F");
         }
 
+        // Day of the week switch
         // dayNumber var
         int dayNumber = 1;
 
@@ -58,6 +61,15 @@ public class ControlFlowDemo {
             default:
                 System.out.println("Invalid day");
                 break;
+        }
+
+        // Multiplication table
+        // number var
+        int number = 9;
+
+        //print multiplication table 1-10
+        for (int i = 0; i < 10; i++) {
+            System.out.println(number + " * " + (i + 1) + " = " + number * (i + 1));
         }
     }
 
