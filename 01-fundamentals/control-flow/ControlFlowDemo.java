@@ -76,5 +76,36 @@ public class ControlFlowDemo {
         }
 
         System.out.println("Liftoff!");
+
+        /*FizzBuzz
+        for loop 1-20
+        print "FizzBuzz" if number divisible by 3 and 5
+        Prints "Fizz" if divisible by 3 only
+        Prints "Buzz" if divisible by 5 only
+        Prints the number otherwise*/
+
+        int num = 20;
+        for (int i = 1; i <= num; i++) {
+            // If i = 13, skip iteration
+            if (i == 13) {
+                continue;
+            }
+            // print "FizzBuzz" if number divisible by 3 and 5
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            // Prints "Fizz" if divisible by 3 only
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            // Prints "Buzz" if divisible by 5 only
+            else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            // Prints the number otherwise*
+            else {
+                System.out.println(i);
+            }
+        }
     }
 }
