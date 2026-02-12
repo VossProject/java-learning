@@ -68,8 +68,8 @@ public class ControlFlowDemo {
         int number = 9;
 
         //print multiplication table 1-10
-        for (int i = 0; i < 10; i++) {
-            System.out.println(number + " * " + (i + 1) + " = " + number * (i + 1));
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + number * i);
         }
     }
 
