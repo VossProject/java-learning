@@ -18,17 +18,13 @@ public class ControlFlowDemo {
         // print grade
         if (score >= 90) {
             System.out.println("A");
-        }
-        else if (score >= 80) {
+        } else if (score >= 80) {
             System.out.println("B");
-        }
-        else if (score >= 70) {
+        } else if (score >= 70) {
             System.out.println("C");
-        }
-        else if (score >= 60) {
+        } else if (score >= 60) {
             System.out.println("D");
-        }
-        else {
+        } else {
             System.out.println("F");
         }
 
@@ -36,7 +32,7 @@ public class ControlFlowDemo {
         // dayNumber var
         int dayNumber = 1;
 
-        switch(dayNumber) {
+        switch (dayNumber) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -71,6 +67,14 @@ public class ControlFlowDemo {
         for (int i = 1; i <= 10; i++) {
             System.out.println(number + " * " + i + " = " + number * i);
         }
-    }
 
+        // Countdown
+        int counter = 10;
+        while (counter != 0) {
+            System.out.println(counter);
+            counter--;
+        }
+
+        System.out.println("Liftoff!");
+    }
 }
